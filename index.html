@@ -13,12 +13,17 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5VlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <audio autoplay loop  id="playAudio">
+        <source src="images/Myndir/lo_fi_merkelwave.mp3">
+    </audio>
+    <!--
     <body>
         <audio autoplay preload controls loop id="playAudio">
             <source src="images/Myndir/lo_fi_merkelwave.mp3">
         </audio>
     </body>
     </head>
+    -->
 
     <!-- Það sem birtist á síðunni -->
     <body class="is-preload">
@@ -236,20 +241,24 @@
 
                                         <div class="numbertext">Verkefni 1</div>
 
-                                        <h3 style="text-align: center; line-height: 500%;">Að búa til vefsíðu með HTML</h3><br/>
+                                        <h3 style="text-align: center; line-height: 300%;">Að búa til vefsíðu með HTML</h3><br/>
 
                                         <p style="padding-left: 10%; word-wrap: break-word; width: 90%;">
-                                            Fyrir þetta verkefni varð að búa til heimasíðu með HTML5. Kröfur verkefnisins voru einfaldar, vefsíðan skyldi skilvirk og auðvelt að nota, gerð af mér og aðgengileg hverjum sem er.
+                                            Fyrir þetta verkefni átti að búa til heimasíðu með HTML5. 
                                             <br/>
-                                            Áður en ég gat hafist handan varð ég fyrst að ákveða forritið sem síðan yrði forrituð í sem og forritið Git sem var nauðsynlegt til þess að hlaða síðunni á netið.
+                                            Kröfur verkefnisins voru þær að vefsíðan varð að vera skilvirk og auðvelt að nota. Hún átti að vera gerð af mér og aðgengileg hverjum sem vildi.
                                             <br/>
-                                            Þar sem ég forrita að mestu í <a class="email" href="https://code.visualstudio.com/">Visual Studio Code</a>  og vildi halda því áfram fyrir þetta verkefni sótti ég viðbótina <a class="email" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live Preview</a> sem leyfir Visual Studio Code að forrita í HTML, CSS og Javascript.
+                                            Áður en ég gat hafist handa varð ég fyrst að ákveða með hvaða forriti ég skyldi forrita síðuna með.
+                                            <br/>
+                                            Þar sem ég forrita að mestu í <a class="email" href="https://code.visualstudio.com/">Visual Studio Code</a> vildi ég halda því áfram svo ég sótti mér viðbótina <a class="email" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live Preview</a> sem leyfir Visual Studio Code að forrita í HTML, CSS og Javascript.
+                                            <br/>
                                             <br/>
                                                 <a>
                                                     <img src="images/Verkefni 1 myndir/vscode.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
                                                 </a>
                                             <br/>
-                                            Þar næst sótti ég <a class="email" href="https://git-scm.com/">Git</a> og hlóð því á tölvuna.
+                                            Þar næst varð ég að sækja <a class="email" href="https://git-scm.com/">Git</a> sem leyfir mér að hlaða síðunni á netið.
+                                            <br/>
                                             <br/>
                                                 <a>
                                                     <img src="images/Verkefni 1 myndir/git.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
@@ -257,47 +266,54 @@
                                             <br/>
                                             Til þess að hýsa síðuna á netinu var notast við síðuna <a class="email" href="https://github.com/">GitHub</a>  sem býður upp á ókeypis hýsingu fyrir litlar vefsíður.
                                             <br/>
+                                            <br/>
                                                 <a>
                                                     <img src="images/Verkefni 1 myndir/github.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
                                                 </a>
                                             <br/>
-                                            Til þess að hlaða síðunni á GitHub var annars vegar hægt að nota <a class="email" href="https://www.atlassian.com/git/tutorials/git-bash">Git Bash</a> en þar sem það virkaði illa sótti ég <a class="email" href="https://desktop.github.com/">GitHub Desktop</a> forritið sem auðveldaði allt ferlið.
+                                            Til þess að hlaða síðunni á GitHub var annars vegar hægt að nota <a class="email" href="https://www.atlassian.com/git/tutorials/git-bash">Git Bash</a> en þar sem það virkaði illa sótti ég <a class="email" href="https://desktop.github.com/">GitHub Desktop</a> forritið sem er mun notandavænna og þægilegra að nota.
+                                            <br/>
                                             <br/>
                                                 <a>
                                                     <img src="images/Verkefni 1 myndir/github desktop.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
                                                 </a>
                                             <br/>
-                                            Þegar búið er að sækja GitHub Desktop verður að skrá sig inn eða ef ekki er búið að búa til aðgang, gera það fyrst og skrá sig svo inn.
+                                            Þegar búið er að sækja GitHub Desktop verður að skrá sig inn eða búa til aðgang á <a class="email" href="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home">GitHub</a>.
+                                            <br/>
                                             <br/>
                                                 <a>
                                                     <img src="images/Verkefni 1 myndir/sign in github desktop.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
                                                 </a>
                                             <br/>
-                                            Þá skal velja "Create a New Repository on your hard drive..." sem býr til möppu á tölvunni sem tengist GitHub. Hægt er að vista möppuna hvar sem er á tölvunni en mælt er með því að búa hana til undir GitHub möppunni í "Documents".
+                                            Þegar búið er að skrá sig inn skal velja "Create a New Repository on your hard drive..." sem býr til möppu á tölvunni sem tengist GitHub og mun geyma öll gögn síðunnar.
                                             <br/>
                                             Möppunni skal vera gefið nafn og lýsing og svo skal velja "Create repository".
+                                            <br/>
                                             <br/>
                                                 <a>
                                                     <img src="images/Verkefni 1 myndir/create repository.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
                                                 </a>
                                             <br/>
-                                            Þá er búið að búa til möppu tengda GitHub og þá má byrja á heimasíðunni.
+                                            Að því loknu er hægt að byrja á vefsíðugerðinni.
                                             <br/>
-                                            Þar sem ég hafði lítið unnið með HTML fyrir þetta verkefni byrjaði ég á að sækja sniðmát af <a class="email" href="https://html5up.net/">HTML5 UP</a> sem hýsir ókeypis sniðmát sem hver sem er getur tekið og breytt eftir sínum þörfum
+                                            Þar sem ég hafði lítið unnið með HTML fyrir þetta verkefni byrjaði ég á að sækja sniðmát af <a class="email" href="https://html5up.net/">HTML5UP</a> sem hýsir ókeypis sniðmát sem hægt er að breyta eftir sínum þörfum.
+                                            <br/>
                                             <br/>
                                                 <a>
                                                     <img src="images/Verkefni 1 myndir/html5up.jpg" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
                                                 </a>
                                             <br/>
-                                            Á HTML5UP fann ég sniðmátið "astral" sem ég var sáttur við, sótti það og byrjaði að breyta því.
+                                            Á HTML5UP fann ég sniðmátið <a class="email" href="https://html5up.net/astral">Astral</a> sem ég hlóð niður og byrjaði að breyta eftir mínum þörfum.
+                                            <br/>
                                             <br/>
                                                 <a>
                                                     <img src="images/Verkefni 1 myndir/astral.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
                                                 </a>
                                             <br/>
-                                            Ég hlóð niður sniðmátinu og færði það í möppuna sem ég hafði búið til áður. Þegar .zip skráin var komin þangað valdi ég "extract here" sem hlóð niður öllu því sem ég þurfti til að byrja á heimasíðunni.
+                                            Eftir að hlaða niður sniðmátinu fékk ég .zip skrá sem ég færði í möppuna sem ég hafði búið til í fyrra skrefi. Þegar skráin var komin þangað valdi ég "extract here" sem hlóð niður öllu því sem ég þurfti til að byrja á heimasíðunni.
                                             <br/>
-                                            Ég hægri smellti þá á index skránna og valdi "Open with Visual Studio Code".
+                                            Ég hægri smellti þá á index.HTML skránna og valdi "Open with Visual Studio Code".
+                                            <br/>
                                             <br/>
                                                 <a>
                                                     <img src="images/Verkefni 1 myndir/vscode_template.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
@@ -305,11 +321,12 @@
                                             <br/>
                                             Með því að nota <a class="email" href="https://www.w3schools.com/howto/howto_css_modal_images.asp">Modal myndir</a>  gat ég búið til <a class="email" href="https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp">Slideshow gallery</a>  sem leyfði mér að skipta þægilega á milli verkefna innan sömu síðunnar.
                                             <br/>
-                                            Til að byrja með voru örvarnar sem færðu á milli verkefna fastar á síðunni en með hjálp <a class="email" href="https://stackoverflow.com/questions/24407796/positioning-vertically-center-aligned-navigation-arrows-to-the-left-and-right-of">stack overflow</a>  tókst mér að stilla þær svo þær fylgdu eftir þegar síðan var færð niður.
+                                            Til að byrja með voru örvarnar sem færðu á milli verkefna fastar á síðunni en með hjálp <a class="email" href="https://stackoverflow.com/questions/24407796/positioning-vertically-center-aligned-navigation-arrows-to-the-left-and-right-of">Stack Overflow</a>  tókst mér að stilla þær svo þær fylgdu eftir þegar síðan færðist niður.
                                             <br/>
-                                            Fyrir ferilskránna sótti ég sniðmát af <a class="email" href="https://superdevresources.com/html-resume-templates/">SDR</a> og lagaði til svo það passaði á síðuna mína.
+                                            Fyrir ferilskránna sótti ég sniðmát af <a class="email" href="https://superdevresources.com/html-resume-templates/">SDR</a> og lagaði til svo það passaði á vefsíðuna.
                                             <br/>
-                                            Þegar síðan var tilbúin opnaði ég GitHub Desktop, fyllti í "Summary (required)" reitinn, valdi "Commit to main" og að lokum "Publish repository". Þá var ég búinn að hlaða síðunni upp.
+                                            Þegar síðan var tilbúin opnaði ég GitHub Desktop, fyllti í "Summary (required)" reitinn, valdi "Commit to main" og að lokum "Publish repository". Þá var ég búinn að hlaða síðunni upp á GitHub.
+                                            <br/>
                                             <br/>
                                                 <a>
                                                     <img src="images/Verkefni 1 myndir/publish.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
@@ -317,11 +334,12 @@
                                             <br/>
                                             Til þess að finna hlekkinn að síðunni opnaði ég GitHub í vafra, opnaði verkefnið, valdi "Settings", "Pages" stillti "Branch:" á "main" og að lokum smellti ég á "Save". Við það birtist hlekkur sem tekur mann á síðuna.
                                             <br/>
+                                            <br/>
                                                 <a>
                                                     <img src="images/Verkefni 1 myndir/publish_page.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
                                                 </a>
                                             <br/>
-                                            Þá var síðan tilbúin.
+                                            Þá var síðan tilbúin og verkefninu lokið.
                                         </p>
                                         
                                     </div>
@@ -410,7 +428,7 @@
 
                            p { margin: 0 0 15% 0; text-align: left;}
 
-                           a { color: #999; text-decoration: none}
+                           a { color: rgb(49, 90, 201); text-decoration: none}
 
                            a:hover { border-bottom-style: solid; color: black; }
 
@@ -445,9 +463,9 @@
                            <div id="objective">
 
                             <p>
-                                Heimilisfang: <span class="tel">Ísland</span><br />
-                                Netfang: <a class="email" href="mailto:greatoldone@lovecraft.com">dao25@hi.is</a><br />
-                                Sími: <span class="tel">+354 525 4000</span>
+                                Heimilisfang: <span class="tel">Hjarðhagi 6</span><br />
+                                Sími: <span class="tel">+354 525 4000</span><br />
+                                Netfang: <a class="email" href="mailto:greatoldone@lovecraft.com">dao25@hi.is</a>
                             </p>
 
                         </div>
@@ -493,6 +511,7 @@
                                <dd>
                                    <p style="text-align: center;">
                                         Python<br/>
+                                        HTML<br/>
                                         AutoCAD<br/>
                                         Solidworks<br/>
                                         Inventor<br/>
