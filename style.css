@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-  animation: 100ms ease-in-out infinite color-change;
+  animation: 0ms ease-in-out infinite color-change;
 }
 
 @keyframes color-change {
