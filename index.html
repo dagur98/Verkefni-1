@@ -1,0 +1,525 @@
+<!DOCTYPE HTML>
+<html>
+    <head> 
+        <title>Homepage</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, ser-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" /> <!-- Gerir bakgrunninn bleikan -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5VlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <!-- Það sem birtist á síðunni -->
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+        <!-- Stillir breidd síðunnar svo hún passi á skjá -->
+        <div id="wrapper">
+                <nav id="nav">
+                    <a href="#" class="icon solid fa-home"><span>Heim</span></a>
+                    <a href="#contact" class="icon solid fa-folder"><span>Verkefni</span></a>
+                    <a href="#work" class="icon solid fa-user"><span>Um mig</span></a>
+                    <a href="https://github.com/" class="fab fa-github"><span>GitHub</span></a>
+                </nav>
+            <!-- \Nav -->
+
+            <!-- Main -->
+            <!-- undirsíður á síðunni -->
+            <div id="main">
+
+                <!-- Me -->
+                    <article id="home" class="panel intro">
+                        <!-- Header -->
+                        <header>
+                            <div id="contact-info" class="vcard">
+                                
+                                <!-- Microformats! -->
+                            
+                                <h1 class="fn">Tölvustudd framleiðsla</h1>
+                            
+                            </div>
+ 
+                            <div id="objective">
+                            
+                            <br />
+
+                            <p>
+                                VÉL608G
+                            </p>
+                            
+                            <!--
+                            <h1>Tölvustudd framleiðsla</h1> 
+                            
+                            <br/>
+
+                            <p>VÉL608G</p>
+                            -->
+                            
+                        </header>
+                        
+                        <!-- href="#work" -->
+                        <a class="png">
+                            <img src="images/myndir/hi.png" style="transform: rotate(45deg); opacity: 0.1;width: 50%;height: 50%;" />
+                        </a>
+
+                        
+                        
+                    
+                    </article>
+
+                <!-- Contact -->
+                    <article id="contact" class="panel">
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                            <style>
+                                body {
+                                font-family: Arial;
+                                margin: 0;
+                                }
+
+                                * {
+                                box-sizing: border-box;
+                                }
+
+                                img {
+                                vertical-align: middle;
+                                }
+
+                                /* Position the image container (needed to position the left and right arrows) */
+                                .container {
+                                position: relative;
+                                }
+
+                                /* Hide the images by default */
+                                .mySlides {
+                                display: none;
+                                text-align: center;
+                                }
+
+                                /* Add a pointer when hovering over the thumbnail images */
+                                .cursor {
+                                cursor: pointer;
+                                }
+
+                                /* Next & previous buttons */
+                                .prev,
+                                .next {
+                                cursor: pointer;
+                                position: fixed;
+                                top: calc(65%);
+                                padding: 12px;
+                                margin-top: 20px;
+                                color: rgb(116, 116, 116);
+                                font-weight: bold;
+                                font-size: 20px;
+                                border-radius: 0 3px 3px 0;
+                                user-select: none;
+                                -webkit-user-select: none;
+                                margin: auto;
+                                }
+
+                                
+
+                                /* Position the "next button" to the right */
+                                .next {
+                                
+                                left: calc(75%);
+                                border-radius: 2px 0 0 2px;
+                                }
+
+                                /* On hover, add a black background color with a little bit see-through */
+                                .prev:hover,
+                                .next:hover {
+                                background-color: rgba(0, 0, 0, 0);
+                                }
+
+                                /* Number text (1/3 etc) */
+                                .numbertext {
+                                color: #00000073;
+                                font-size: 16px;
+                                padding: 8px 12px;
+                                position: relative;
+                                top: 0;
+                                }
+
+                                /* Container for image text */
+                                .caption-container {
+                                text-align: center;
+                                background-color: rgb(255, 0, 0);
+                                padding: 2px 2px;
+                                color: rgb(0, 0, 0);
+                                }
+
+                                .row:after {
+                                content: "";
+                                display: table;
+                                clear: both;
+                                }
+
+                                /* Six columns side by side */
+                                .column {
+                                float: left;
+                                width: 16.66%;
+                                }
+
+                                /* Add a transparency effect for thumnbail images */
+                                .demo {
+                                opacity: 0.2;
+                                }
+
+                                .active,
+                                .demo:hover {
+                                opacity: 1;
+                                }
+
+                                #text {
+                                z-index: 100;
+                                position: relative;
+                                color: rgb(0, 0, 0);
+                                font-size: 30px;
+                                font-weight: bold;
+                                left: 0px;
+                                top: -30%;
+                                transform: rotate(0deg);
+                                text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+                                user-select: none;
+                                }
+                            </style>
+                            <body>
+                                <div class="row">
+
+                                    <div class="column">
+                                        <a><img class="demo cursor" src="images/Verkefni 1 myndir/html.png" style="width:100%" onclick="currentSlide(1)" alt="Project 1"></a>
+                                        <p id="text"></p>
+                                    </div>
+
+                                    <div class="column">
+                                        <img class="demo cursor" src="images/Verkefni 2 myndir/kross.png" style="width:100%" onclick="currentSlide(2)" alt="Project 2">
+                                        <p id="text"></p>
+                                    </div>
+
+                                    <div class="column">
+                                        <img class="demo cursor" src="images/Verkefni 3 myndir/kross.png" style="width:100%" onclick="currentSlide(3)" alt="Project 3">
+                                        <p id="text"></p>
+                                    </div>
+
+                                    <div class="column">
+                                        <img class="demo cursor" src="images/Verkefni 4 myndir/kross.png" style="width:100%" onclick="currentSlide(4)" alt="Project 4">
+                                        <p id="text"></p>
+                                    </div>
+
+                                    <div class="column">
+                                        <img class="demo cursor" src="images/Verkefni 5 myndir/kross.png" style="width:100%" onclick="currentSlide(5)" alt="Project 5">
+                                        <p id="text"></p>
+                                    </div>    
+
+                                    <div class="column">
+                                        <img class="demo cursor" src="images/Verkefni 6 myndir/kross.png" style="width:100%" onclick="currentSlide(6)" alt="Project 6">
+                                        <p id="text"></p>
+                                    </div>
+                                </div>
+                                <!--
+                                <div class="caption-container">
+                                    <p id="caption"></p>
+                                    <caption>caption</caption>
+                                </div>
+                                -->
+                                <div class="container">
+
+                                    <div class="mySlides">
+
+                                        <div class="numbertext">Verkefni 1</div>
+
+                                        <h3 style="text-align: center; line-height: 200%;">Að búa til vefsíðu með HTML</h3><br/>
+
+                                        <p style="padding-left: 10%; word-wrap: break-word; width: 90%;">
+                                            Fyrir þetta verkefni varð að búa til nothæfa heimasíðu sem hver sem er hefði aðgang að. Kröfur verkefnisins voru að vefsíðan yrði að vera forrituð með HTML5. 
+                                            <br />
+                                            Langt var síðan ég vann síðast með HTML svo byrjað var á því að sækja "template" af <a class="email" href="https://html5up.net/">HTML5 UP</a> sem hýsir fullt af ókeypis "template-um".
+                                            <br/>
+                                            <a>
+                                                <img src="images/Verkefni 1 myndir/html5up.jpg" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            <br/>
+                                            Á HTML5 UP fann ég svo þema sem ég var sáttur með, "downloadaði" því og gat ég þá farið að breyta því til þar til ég var sáttur.
+                                            <br/>
+                                            Til þess að forrita í HTML þarf að nota "compiler" og þar sem ég er vanur að forrita allt með <a class="email" href="https://code.visualstudio.com/">Visual Studio Code</a> vildi ég halda áfram að nota það. 
+                                            <br/>
+                                            <a>
+                                                <img src="images/Verkefni 1 myndir/vscode.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            <br/>
+                                            Til þess að forrita HTML5 í vscode varð ég að fá mér <a class="email" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live Preview</a> "plugin-ið" og eftir að hafa sett það upp gat ég byrjað að forrita HTML í vscode.
+                                            <br/>
+                                            <a>
+                                                <img src="images/Verkefni 1 myndir/vscode_template.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            <br/>
+                                            Til þess að sýna verkefnin ákvað ég að notast við <a class="email" href="https://www.w3schools.com/howto/howto_css_modal_images.asp">modal image</a> sem opnar glugga þegar smellt er á mynd. Þannig gat ég haft öll verkefnin á sömu síðu sem gerði allt meira "clean".
+                                            <br/>
+                                            Með því að nota modal myndir gat ég búið til <a class="email" href="https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp">slideshow gallery</a> sem leyfði mér að skipta þægilega á milli verkefna á sömu síðu.
+                                            <br/>
+                                            Til að byrja með voru örvarnar á hliðunum fastar á síðunni en með hjálp <a class="email" href="https://stackoverflow.com/questions/24407796/positioning-vertically-center-aligned-navigation-arrows-to-the-left-and-right-of">stack overflow</a> gat ég látið þær fylgja með skjánum þegar skrollað var niður.
+                                            <br/>
+                                            Þegar síðan var tilbúin sótti ég  <a class="email" href="https://git-scm.com/">Git</a> sem er forkrafa þess að hlaða síðunni upp á GitHub.
+                                            <br/>
+                                            <a>
+                                                <img src="images/Verkefni 1 myndir/git.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            <br/>
+                                            Þegar búið er að sækja git þarf að hlaða síðunni upp á github. 
+                                            <br/>
+                                            Í fyrstu reyndi ég að hlaða síðunni upp á github með notkun GitBash en þar sem það virkaði illa sótti ég <a class="email" href="https://desktop.github.com/">GitHub Desktop</a> sem reyndist mun auðveldara að nota.
+                                            <br/>
+                                            <a>
+                                                <img src="images/Verkefni 1 myndir/github desktop.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            <br/>
+                                            Þegar búið er að sækja GitHub Desktop verður að skrá sig inn og þegar það er komið er hægt að velja "Create a New Repository on your hard drive..."
+                                            <br/>
+                                            <a>
+                                                <img src="images/Verkefni 1 myndir/create new repository.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            <br/>
+                                            Síðan þarf að skýra svæðið og stilla "Local path" til þess að vera það sama og mappan sem HTML skráin fyrir síðuna er geymd í.
+                                            <br/>
+                                            <a>
+                                                <img src="images/Verkefni 1 myndir/repository.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            <br/>
+                                            Þegar því er lokið er valið "Create repository" og að lokum þegar búið er að hlaða allri skránni upp "Publish branch".
+                                            <br/>
+                                            <a>
+                                                <img src="images/Verkefni 1 myndir/publish.jpg" style="width: 40%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            <br/>
+                                        </p>
+                                        
+
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Verkefni 2</div>
+                                        <h3 style="text-align: center; line-height: 200%;">Í vinnslu</h3><br/>
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Verkefni 3</div>
+                                        <h3 style="text-align: center; line-height: 200%;">Í vinnslu</h3><br/>
+                                    </div>
+                                        
+                                    <div class="mySlides">
+                                        <div class="numbertext">Verkefni 4</div>
+                                        <h3 style="text-align: center; line-height: 200%;">Í vinnslu</h3><br/>
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Verkefni 5</div>
+                                        <h3 style="text-align: center; line-height: 200%;">Í vinnslu</h3><br/>
+                                    </div>
+                                        
+                                    <div class="mySlides">
+                                        <div class="numbertext">Verkefni 6</div>
+                                        <h3 style="text-align: center; line-height: 200%;">Í vinnslu</h3><br/>
+                                    </div>
+  
+                                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                            <script>
+                                var slideIndex = 1;
+                                showSlides(slideIndex);
+
+                                function plusSlides(n) {
+                                showSlides(slideIndex += n);
+                                }
+
+                                function currentSlide(n) {
+                                showSlides(slideIndex = n);
+                                }
+
+                                function showSlides(n) {
+                                var i;
+                                var slides = document.getElementsByClassName("mySlides");
+                                var dots = document.getElementsByClassName("demo");
+                                var captionText = document.getElementById("caption");
+                                if (n > slides.length) {slideIndex = 1}
+                                if (n < 1) {slideIndex = slides.length}
+                                for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";
+                                }
+                                for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex-1].style.display = "block";
+                                dots[slideIndex-1].className += " active";
+                                captionText.innerHTML = dots[slideIndex-1].alt;
+                                }
+                            </script>
+                    </article>
+
+                <!-- Projects -->
+                <article id="work" class="panel" style="text-align: center;">
+                    <head>
+                        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+                   
+                        <title>One Page Resume</title>
+                   
+                        <style type="text/css">
+                           * { margin: 0; padding: 0; }
+                           /*body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }*/
+                           .clear { clear: both; }
+
+                           #page-wrap { width: 90%; margin: 2% auto 3%; }
+
+                           #pic { float: right; margin: -30px 0 0 0; width: 25%; border-radius: 50%;}
+
+                           h1 { margin: 0 0 14px 0; padding: 0 0 12px 0; font-size: 30px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; float: left;}
+
+                           h2 { font-size: 12px; margin: 0 0 6px 0; position: static; }
+
+                           h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+
+                           p { margin: 0 0 15% 0; text-align: left;}
+
+                           a { color: #999; text-decoration: none}
+
+                           a:hover { border-bottom-style: solid; color: black; }
+
+                           ul { margin: 0 0 32px 17px; }
+
+                           #objective { width: 60%; float: left; }
+
+                           #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+
+                           dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+
+                           dd { width: 60%; float: left; }
+
+                           dd.clear { float: none; margin: 0; height: 15px; }
+                        </style>
+                   </head>
+                   
+                   <body>
+                   
+                       <div id="page-wrap">
+                       
+                           <img src="images/myndir/eg.jpg" alt="Photo of Cthulu" id="pic" />
+                       
+                           <div id="contact-info" class="vcard">
+                           
+                               <!-- Microformats! -->
+                           
+                               <h1 class="fn">Dagur Óskarsson</h1>
+                           
+                           </div>
+
+                           <div id="objective">
+
+                            <p>
+                                Heimilisfang: <span class="tel">Ísland</span><br />
+                                Netfang: <a class="email" href="mailto:greatoldone@lovecraft.com">dao25@hi.is</a><br />
+                                Sími: <span class="tel">+354 525 4000</span>
+                            </p>
+
+                        </div>
+                                   
+                           <div id="objective">
+                               <p>
+                                   I am an outgoing and energetic (ask anybody) young professional, seeking a 
+                                   career that fits my professional skills, personality, and murderous tendencies. 
+                                   My squid-like head is a masterful problem solver and inspires fear in who gaze upon it. 
+                                   I can bring world domination to your organization. 
+                               </p>
+                           </div>
+                           
+                           <div class="clear"></div>
+                           
+                           <dl>
+                               <dd class="clear"></dd>
+                               
+                               <dt>Menntun</dt>
+                               <dd>
+                                   <p style="text-align: center;">
+                                        <strong>Háskóli Íslands:</strong> Vélaverkfræði, BS<br/>
+                                        <strong>Menntaskólinn við Sund:</strong> Stúdentspróf
+                                    </p>
+                               </dd>
+
+                               <dd class="clear"></dd>
+                               
+                               <dt>Starfsferill</dt>
+                               <dd>
+                                   <p style="text-align: center;">
+                                        <strong>Optitog:</strong> Rannsakandi<br/>
+                                        <strong>Fjarskiptastofa:</strong> Starfsmaður<br/>
+                                        <strong>Adrenalín:</strong> Starfsmaður<br/>
+                                        <strong>Ultima Thule:</strong> Lagerstjóri<br/>
+                                        <strong>Ultima Thule:</strong> Starfsmaður
+                                    </p>
+                               </dd>
+
+                               <dd class="clear"></dd>
+                               
+                               <dt>Kunnátta</dt>
+                               <dd>
+                                   <p style="text-align: center;">
+                                        Python<br/>
+                                        AutoCAD<br/>
+                                        Solidworks<br/>
+                                        Inventor<br/>
+                                        Excel
+                                    </p>
+                               </dd>
+
+                               <dd class="clear"></dd>
+                               
+                               <dt>Áhugamál</dt>
+                               <dd>
+                                   <p style="text-align: center;">
+                                        3D prentun<br/>
+                                        Hlaup<br/>
+                                        Útivist
+                                    </p>
+                               </dd>
+                               
+                           </dl>
+                           
+                           <div class="clear"></div>
+                       
+                       </div>
+                   
+                   </body>
+                </article>
+            </div>
+
+
+            </div>
+            <!-- \Main -->
+
+        	<!-- Footer -->
+            <!-- Texti neðst á síðunni -->
+                <div id="footer">
+                    <ul class="copyright">
+                        <li>Dagur Óskarsson &copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+            <!-- \Footer -->
+
+		    <!-- Scripts -->
+            <!-- scripts fyrir síðuna -->
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/browser.min.js"></script>
+                <script src="assets/js/breakpoints.min.js"></script>
+                <script src="assets/js/util.js"></script>
+                <script src="assets/js/main.js"></script>
+            <!-- \Scripts -->
+
+    </body>
+
+</html>
